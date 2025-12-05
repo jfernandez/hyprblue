@@ -21,7 +21,6 @@ modules:
     repos:
       files:
         - https://download.docker.com/linux/fedora/docker-ce.repo
-        - 1password.repo
         - google-chrome.repo
       copr:
         - atim/starship
@@ -48,8 +47,6 @@ modules:
         - virt-manager
         - qemu-kvm
         # apps
-        - 1password
-        - 1password-cli
         - google-chrome-stable
         # development
         - gcc
@@ -79,6 +76,10 @@ modules:
         # "firefox" is the main package, "firefox-langpacks" is a dependency
         - firefox
         - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+
+  - type: bling
+    install:
+      - 1password # installs 1Password and CLI with proper GID configuration
 
   - type: script
     scripts:
