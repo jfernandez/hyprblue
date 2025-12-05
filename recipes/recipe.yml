@@ -50,6 +50,26 @@ modules:
         - 1password
         - 1password-cli
         - google-chrome-stable
+        # development
+        - gcc
+        - gcc-c++
+        - make
+        - bison
+        - flex
+        - ncurses-devel
+        - elfutils-libelf-devel
+        - zlib-devel
+        # CLI utilities
+        - curl
+        - fzf
+        - git
+        - ripgrep
+        - zsh
+        - stow
+        - autojump-zsh
+        - gnupg2
+        - openssl
+        - neomutt
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
