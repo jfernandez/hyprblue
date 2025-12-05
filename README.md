@@ -1,8 +1,6 @@
 # hyprblue &nbsp; [![bluebuild build badge](https://github.com/jfernandez/hyprblue/actions/workflows/build.yml/badge.svg)](https://github.com/jfernandez/hyprblue/actions/workflows/build.yml)
 
-See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
-
-After setup, it is recommended you update this README to describe your custom image.
+A custom Fedora Atomic image based on [Wayblue's hyprland-nvidia-open](https://github.com/wayblueorg/wayblue), featuring Hyprland with open-source NVIDIA drivers.
 
 ## Installation
 
@@ -28,7 +26,7 @@ To rebase an existing atomic Fedora installation to the latest build:
   systemctl reboot
   ```
 
-The `latest` tag will automatically point to the latest build. That build will still always use the Fedora version specified in `recipe.yml`, so you won't get accidentally updated to the next major version.
+The `latest` tag will automatically point to the latest build, tracking the upstream Wayblue image.
 
 ## ISO
 
