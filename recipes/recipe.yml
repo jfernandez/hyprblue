@@ -22,7 +22,7 @@ modules:
       files:
         - https://download.docker.com/linux/fedora/docker-ce.repo
         - 1password.repo
-        - https://dl.google.com/linux/chrome/rpm/stable/x86_64/google-chrome.repo
+        - google-chrome.repo
       copr:
         - atim/starship
     install:
