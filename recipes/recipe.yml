@@ -25,6 +25,7 @@ modules:
         - google-chrome.repo
       copr:
         - atim/starship
+        - ublue-os/packages
     install:
       packages:
         - micro
@@ -70,6 +71,8 @@ modules:
         - gnupg2
         - openssl
         - neomutt
+        # homebrew
+        - ublue-brew
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
@@ -80,6 +83,7 @@ modules:
   - type: script
     scripts:
       - install-neovim-nightly.sh
+      - enable-brew-services.sh
 
   - type: default-flatpaks
     configurations:
