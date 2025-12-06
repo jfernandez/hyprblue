@@ -22,6 +22,7 @@ modules:
       files:
         - https://download.docker.com/linux/fedora/docker-ce.repo
         - google-chrome.repo
+        - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
       copr:
         - atim/starship
         - ublue-os/packages
@@ -70,6 +71,8 @@ modules:
         - gnupg2
         - openssl
         - neomutt
+        # networking
+        - tailscale
         # homebrew
         - ublue-brew
     remove:
@@ -88,6 +91,11 @@ modules:
       - install-neovim-nightly.sh
       - enable-brew-services.sh
       - enable-hyprblue-groups.sh
+
+  - type: systemd
+    system:
+      enabled:
+        - tailscaled
 
   - type: default-flatpaks
     configurations:
